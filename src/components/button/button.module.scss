@@ -1,0 +1,30 @@
+.button {
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background-color: #403f3f;
+    }
+  }
+
+  &.secondary {
+    background-color: #eee;
+    color: #444;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
