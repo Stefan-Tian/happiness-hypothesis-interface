@@ -10,7 +10,9 @@ const QuestionForm = () => {
         <Button variant="primary" className={styles.askButton} type="submit">
           Ask Question
         </Button>
-        <Button variant="secondary">I'm feeling lucky</Button>
+        <Button variant="secondary" className={styles.luckyButton}>
+          I'm feeling lucky
+        </Button>
       </div>
     </form>
   );
