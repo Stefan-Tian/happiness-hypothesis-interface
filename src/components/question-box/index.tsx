@@ -1,11 +1,18 @@
 import styles from './question-box.module.scss';
 
-const QuestionBox = () => {
+interface Props {
+  onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  value: string;
+}
+
+const QuestionBox = ({ onChange, value }: Props) => {
   return (
     <textarea
       className={styles.textarea}
       rows={3}
-      placeholder="What is happiness?"
+      placeholder="Ask your question here..."
+      onChange={onChange}
+      value={value}
     />
   );
 };
