@@ -7,6 +7,7 @@ const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/happiness-hypothesis-interface/',
   plugins: [react()],
   resolve: {
     alias: {
