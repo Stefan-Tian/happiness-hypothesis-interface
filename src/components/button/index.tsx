@@ -13,7 +13,9 @@ const Button = ({
 }: React.PropsWithChildren<Props>) => {
   return (
     <button
-      className={`${styles.button} ${styles[variant]} ${className}`}
+      className={`${styles.button} ${styles[variant]} ${className} 
+      ${buttonProps.disabled ? styles.disabled : ''}
+      `}
       {...buttonProps}
     >
       {children}

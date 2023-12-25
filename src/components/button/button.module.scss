@@ -27,4 +27,15 @@
       background-color: #ccc;
     }
   }
+
+  &.disabled {
+    background-color: #ccc;
+    color: #696565;
+
+    &:hover {
+      background-color: #ccc;
+      color: #696565;
+      cursor: not-allowed;
+    }
+  }
 }
