@@ -11,7 +11,7 @@ interface AskResponse {
 }
 
 export const ask = async (payload: AskPayload): Promise<AskResponse> => {
-  const response = await axiosInstance.post('/question', payload);
+  const response = await axiosInstance.post('/ask', payload);
   console.warn(response.data);
 
   return response.data;
