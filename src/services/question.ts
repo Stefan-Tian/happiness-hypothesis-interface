@@ -10,7 +10,7 @@ interface AskResponse {
   id: number;
 }
 
-export const ask = async (payload: AskPayload): Promise<AskResponse> => {
+const ask = async (payload: AskPayload): Promise<AskResponse> => {
   const response = await axiosInstance.post('/ask', payload);
   console.warn(response.data);
 
